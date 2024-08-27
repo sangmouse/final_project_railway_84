@@ -13,7 +13,7 @@ const UserList = () => {
           </Link>
         </div>
         <div>
-          <table>
+          <table className={style.list__table}>
             <tr>
               <th>#</th>
               <th>Full Name</th>
@@ -30,9 +30,9 @@ const UserList = () => {
               <td>VTI</td>
               <td>Developer</td>
               <td>04/10/2013</td>
-              <td>
-                <Link to="/"></Link>
-                <button></button>
+              <td className={style.list__action}>
+                <Link to="/" className={style.list__btn__edit}></Link>
+                <button className={style.list__btn__delete}></button>
               </td>
             </tr>
           </table>

@@ -48,4 +48,53 @@
       }
     }
   }
+
+  &__table {
+    margin: 20px 0 0 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr,
+    th,
+    td {
+      border: 1px solid #ededed;
+      text-align: center;
+      padding: 10px 10px;
+      border-left: 0;
+      border-right: 0;
+    }
+
+    th {
+      font-size: 14px;
+    }
+
+    td {
+      font-size: 13px;
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border: none !important;
+  }
+
+  &__btn__delete,
+  &__btn__edit {
+    display: inline-flex;
+    min-width: 16px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../../../public/icons/x-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__btn__edit {
+    background-image: url(../../../public/icons/pencil-square.svg);
+  }
 }
