@@ -1,0 +1,44 @@
+/* define font-family */
+
+
+@font-face {
+  font-family: robotoBlack;
+  src: url(../src/styles/fonts/roboto/Roboto-Black.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: robotoLight;
+  src: url(../src/styles/fonts/roboto/Roboto-Light.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: robotoMedium;
+  src: url(../src/styles/fonts/roboto/Roboto-Medium.ttf) format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: robotoBold;
+  src: url(../src/styles/fonts/roboto/Roboto-Bold.ttf) format("truetype");
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+p, h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+html, body {
+  font-family: robotoLight, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
