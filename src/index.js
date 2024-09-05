@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LayoutRoot from "./components/LayoutRoot/LayoutRoot";
 import SignIn from "./components/SignIn/SignIn";
+import UserForm from "./components/UserForm/UserForm";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <App />,
+      },
+      {
+        path: "/user/create",
+        element: <UserForm />,
+      },
+      {
+        path: "/user/:id",
+        element: <UserForm />,
       },
     ],
   },
