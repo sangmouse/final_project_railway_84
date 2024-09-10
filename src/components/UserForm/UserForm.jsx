@@ -11,6 +11,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import style from "./user-form.module.scss";
 import { useEffect, useState } from "react";
+import moment from "moment/moment";
 
 const UserForm = () => {
   const [user, setUser] = useState({
@@ -35,7 +36,10 @@ const UserForm = () => {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
-        body: JSON.stringify(user),
+        body: JSON.stringify({
+          ...user,
+          dateCreated: moment(),
+        }),
       });
     } else {
       await fetch(`http://localhost:3000/users/${id}`, {

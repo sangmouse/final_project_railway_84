@@ -98,3 +98,19 @@
     background-image: url(../../../public/icons/pencil-square.svg);
   }
 }
+
+.btn__popup__delete,
+.btn__popup__cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.btn__popup__delete {
+  background: #299be4;
+  color: white;
+}

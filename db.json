@@ -1,3 +1,12 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "693d",
+      "email": "phuongtd@gmail.com",
+      "fullName": "Trinh Duy Phuong",
+      "department": "cmc",
+      "position": "comtor",
+      "dateCreated": "2024-09-10T15:25:01.074Z"
+    }
+  ]
 }
